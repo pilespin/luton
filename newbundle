@@ -1,0 +1,41 @@
+#!/bin/sh
+
+mkdir modele/$1
+mkdir vue/$1
+mkdir controleur/$1
+
+echo "<?php
+
+include_once \"modele/user_management/lib/lib.php\";
+include_once \"modele/user_management/lib/db_conect.php\";
+include_once \"modele/user_management/lib/db_get.php\";" > modele/$1/index.php
+
+
+echo "<?php
+ob_start();
+?>
+
+<link href="vue/$1/style.css" rel="stylesheet" type="text/css" />
+
+<?= \$controler['$1_controler'] ?>
+
+<?php
+\$content['$1_vue'] = ob_get_clean();" > vue/$1/index.php
+
+
+touch vue/$1/style.css
+
+
+echo "<?php
+
+include_once \"modele/$1/index.php\";
+
+ob_start();
+?>
+
+<h1>New Bundle $1</h1>
+
+<?php
+\$controler['$1_controler'] = ob_get_clean();
+
+include_once('vue/$1/index.php');" > controleur/$1/index.php
