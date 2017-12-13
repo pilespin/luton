@@ -7,7 +7,7 @@ ob_start();
 
 <br><br><br><br><br>
 
-
+<!-- <input type=“file” accept=“image/*;capture=camera”> -->
 <video id="video" width="640" height="480" autoplay></video>
 <br><br>
 <button id="snap">Snap Photo</button>

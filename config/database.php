@@ -1,12 +1,14 @@
 <?php
 
 $DB_NAME = 'flybnb';
+// $DB_NAME = 'id3094344_sound';
 $FOLDER_ROOT = '';
 
 $DB_DSN = "mysql:host=localhost;dbname=$DB_NAME";
 $DB_DSN_CREATE = 'mysql:host=localhost';
 
 $DB_USER = 'root';
+// $DB_USER = 'id3094344_a58zl58pjk6d2d84n1d36sd';
 $DB_PASSWORD = 'superpassword.';
 
 $MAIL = 'registration@flybnb.io';

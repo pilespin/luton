@@ -1,1 +1,1 @@
-zip -r config controleur favicon32.png fontAwesome images index.php js locale modele vue w3.css
+zip -r a.zip config controleur favicon32.png fontAwesome images index.php js jsqrcode locale modele vue w3.css
