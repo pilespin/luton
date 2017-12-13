@@ -23,7 +23,8 @@ else if ($tmp == "changemail")
 	include_once('controleur/user_management/change_email.php');
 else if ($tmp == "changepass")
 	include_once('controleur/user_management/change_password.php');
-
+// else if ($tmp == "add_promotion")
+// 	include_once('controleur/user_management/shop/index.php');
 // ob_start();
 
 include_once "modele/user_management/lib/lib.php";

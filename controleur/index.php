@@ -47,8 +47,10 @@ else
 
 include_once('controleur/sidebar/index.php');
 include_once('controleur/user_management/index.php');
+include_once('controleur/shop/index.php');
+
 
 // if ($tmp == NULL)
 	// include_once('vue/template_home.php');
 // else
-	include_once('vue/template_default.php');
+include_once('vue/template_default.php');

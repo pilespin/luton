@@ -50,7 +50,7 @@
         // echo $text;
   
 
-        include_once "qr/src/test."
+        // include_once "qr/src/test."
 
 
 // namespace Khanamiryan\QrCodeTests;
@@ -79,7 +79,7 @@
     if (isset($_SESSION['login']) && $_SESSION['login'] != "")
     {
         ?>
-<h1> Commercant ajouter promotion</h1>
+<!-- <h1> Commercant ajouter promotion</h1>
 
 <form action="/action_page.php">
   Promotion: <input type="text" name="fname" placeholder="-20%"><br>
@@ -91,7 +91,7 @@
     <br>
 
 Votre promotion sera immediatement disponible aupres des utilisateur
-    <br><br><br><br><br>
+    <br><br><br><br><br> -->
 
 
 <h1> Utilisateur</h1>
@@ -101,7 +101,7 @@ Votre promotion sera immediatement disponible aupres des utilisateur
     <br>
     <br>
 
-	<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Eric_Dupond_promo_parfum_20_pour_cent" />
+	<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Jonathan_Pollard_promo_Kinder_20_pour_cent" />
 
   
 
@@ -119,7 +119,7 @@ Votre promotion sera immediatement disponible aupres des utilisateur
     <br>
     <br>
 
-    <img src="http://www.barcodes4.me/barcode/c39/012345678911.png" />
+    <img src="http://www.barcodes4.me/barcode/c39/Kinder20pourcent.png" />
 
     <br>
     <br>
@@ -137,6 +137,14 @@ Le commercant applique la reduction sur le produit
 
     ?>
 <!-- http://api.qrserver.com/v1/read-qr-code/?fileurl=http%3A%2F%2Fapi.qrserver.com%2Fv1%2Fcreate-qr-code%2F%3Fdata%3DHelloWorld -->
+
+
+
+<input type=“file” accept=“image/*” capture=“camera”>
+
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
 
 
 </html>
