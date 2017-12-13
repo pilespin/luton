@@ -5,28 +5,42 @@ include_once "modele/shop/index.php";
 ob_start();
 ?>
 
-<h1> Commercant ajouter promotion</h1>
-
-<form action="/action_page.php">
-	Promotion: <input type="text" name="fname" placeholder="-20%"><br>
-	Article: <input type="text" name="lname" placeholder="Parfum Chanel"><br>
-	<input type="submit" value="Submit">
-</form>
-
-<br>
-<br>
-
-Votre promotion sera immediatement disponible aupres des utilisateur
 <br><br><br><br><br>
 
 
-
-
-
-
 <video id="video" width="640" height="480" autoplay></video>
+<br><br>
 <button id="snap">Snap Photo</button>
+<br><br>
+
 <canvas id="canvas" width="640" height="480"></canvas>
+
+
+<h1> En boutique</h1>
+
+
+Le commercant scanne le QR code et genere un code barre (EAN-13) compatible avec son instalation existante
+<br>
+
+les donnes que l'utilisateur a inscrit a la connexion au wifi son remonté au serveur
+
+<br>
+<br>
+<br>
+
+<img src="http://www.barcodes4.me/barcode/c39/Kinder20pourcent.png" />
+
+<br>
+<br>
+<br>
+
+Le commercant applique la reduction sur le produit
+<br><br><br><br><br>
+
+<h1> veuillez vous connecter pour ajouter des promotion</h1>
+
+
+
 
 <script type="text/javascript" src="jsqrcode/src/grid.js"></script>
 <script type="text/javascript" src="jsqrcode/src/version.js"></script>
@@ -81,7 +95,7 @@ document.getElementById("snap").addEventListener("click", function() {
 
 	decodeImageFromBase64(b64,function(decodedInformation){
 		console.log(decodedInformation);
-		// alert(decodedInformation);
+		alert(decodedInformation);
 	});
 });
 

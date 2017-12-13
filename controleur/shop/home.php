@@ -15,4 +15,6 @@ else if ($tmp == "convert_qr")
 else
 	include_once('home.php');
 
+
+
 include_once('vue/shop/index.php');
