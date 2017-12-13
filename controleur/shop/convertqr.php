@@ -2,18 +2,26 @@
 
 include_once "modele/shop/index.php";
 
+///////////////////////////////////////////////////////
+if (!isset($_SESSION['login'])) {
+	echo "<meta http-equiv='refresh' content='0; url=index.php' />";
+	return;
+}
+///////////////////////////////////////////////////////
+
 ob_start();
 ?>
 
-<br><br><br><br><br>
+<br>
+<h1 class=" w3-text-gray w3-center">Scan QR code</h1><br>
+<br>
 
 <!-- <input type=“file” accept=“image/*;capture=camera”> -->
-<video id="video" width="640" height="480" autoplay></video>
+<video class="w3-card" id="video" width="640" height="480" autoplay></video>
 <br><br>
-<button id="snap">Snap Photo</button>
-<br><br>
+<button class="w3-btn w3-blue" id="snap">Snap Code</button>
 
-<canvas id="canvas" width="640" height="480"></canvas>
+<br><br>
 
 
 <h1> En boutique</h1>
@@ -35,11 +43,9 @@ les donnes que l'utilisateur a inscrit a la connexion au wifi son remonté au se
 <br>
 
 Le commercant applique la reduction sur le produit
-<br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
-<h1> veuillez vous connecter pour ajouter des promotion</h1>
-
-
+<canvas id="canvas" width="640" height="480"></canvas>
 
 
 <script type="text/javascript" src="jsqrcode/src/grid.js"></script>

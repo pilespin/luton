@@ -44,45 +44,6 @@
 
 	</body> 
 
-    <br><br><br>
-
-    <?php
-
-    if (isset($_SESSION['login']) && $_SESSION['login'] != "")
-    {
-        ?>
-
-      <!-- <h3> Hello please select one button above</h3> -->
-
-
-      <!--   <h1> Utilisateur</h1>
-
-        Creation de QR code corespondant a la promotion et a l'identite de l'utilisateur
-        <br>
-        <br>
-        <br>
-
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Jonathan_Pollard_promo_Kinder_20_pour_cent" />
-
-
-
-        <br><br><br><br><br> -->
-
-        <?php
-    }
-    else
-    {
-        echo "<h1> veuillez vous connecter pour ajouter des promotion</h1>";
-    }
-
-    ?>
-    <!-- http://api.qrserver.com/v1/read-qr-code/?fileurl=http%3A%2F%2Fapi.qrserver.com%2Fv1%2Fcreate-qr-code%2F%3Fdata%3DHelloWorld -->
-
-
-
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-
+	<br><br><br>
 
     </html>
