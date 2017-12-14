@@ -48,6 +48,7 @@ else
 include_once('controleur/sidebar/index.php');
 include_once('controleur/user_management/index.php');
 include_once('controleur/shop/index.php');
+include_once('controleur/game/index.php');
 
 
 // if ($tmp == NULL)

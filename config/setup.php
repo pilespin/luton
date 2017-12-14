@@ -26,20 +26,16 @@ try
 			updated DATETIME
 			);
 
-			CREATE TABLE users(
+			CREATE TABLE promo(
 			id int UNSIGNED AUTO_INCREMENT PRIMARY KEY NOT NULL UNIQUE,
-			login varchar($DB_LENGTH_MAX_LOGIN) NOT NULL UNIQUE,
-			grade varchar($DB_LENGTH_MAX_LOGIN) NOT NULL,
-			parrain varchar($DB_LENGTH_MAX_LOGIN),
-			mail varchar($DB_LENGTH_MAX_EMAIL) NOT NULL UNIQUE,
-			pass varchar($DB_LENGTH_MAX_PASS) NOT NULL,
-			mail_confirm varchar($DB_LENGTH_MAX_HASH) NOT NULL,
-			pass_confirm varchar($DB_LENGTH_MAX_HASH),
-			last_logged DATETIME,
-			ip varchar($DB_LENGTH_MAX_LOGIN),
-			user_agent varchar($DB_LENGTH_MAX_LOGIN),
-			created DATETIME,
-			updated DATETIME
+			login varchar($DB_LENGTH_MAX_LOGIN),
+			article varchar($DB_LENGTH_MAX_LOGIN),
+			promotion varchar($DB_LENGTH_MAX_LOGIN),
+			agemin varchar($DB_LENGTH_MAX_LOGIN),
+			agemax varchar($DB_LENGTH_MAX_LOGIN),
+			nationality varchar($DB_LENGTH_MAX_LOGIN),
+			sex varchar($DB_LENGTH_MAX_LOGIN),
+			created DATETIME
 			);
 
 			INSERT INTO users(login, grade, mail, parrain, pass, mail_confirm, created, updated)

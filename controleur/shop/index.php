@@ -16,7 +16,9 @@ else if ($tmp == "show_converted")
 	include_once('controleur/shop/show_converted.php');
 else if ($tmp == "get_discount")
 	include_once('controleur/shop/get_discount.php');
-else
+else if ($tmp == "addpromo_validate")
+	include_once('controleur/shop/addpromo_validate.php');
+else if ($tmp == "")
 	include_once('home.php');
 
 include_once('vue/shop/index.php');

@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>QR</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon32.png" type="image/x-icon">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -27,8 +27,12 @@
 		<?php
 	// print_r($_SERVER);
 	// echo "$_SERVER[HTTP_USER_AGENT]";
-
+		// foreach ($content as $key => $value) {
+		// 	print $key;
+		// 	print " --- ";
+		// }
 		foreach ($content as $key => $value) {
+			// print $key
 			if (strlen($value) > 0 && $key != "notif" && $key != "error" && $key != "warn")
 			{
 				if ($key == "sidebar_vue")

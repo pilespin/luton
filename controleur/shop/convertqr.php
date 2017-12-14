@@ -19,6 +19,15 @@ ob_start();
 <!-- <input type=“file” accept=“image/*;capture=camera”> -->
 <video class="w3-card" id="video" width="640" height="480" autoplay></video>
 
+<!-- <input type="file" id="video" name="video" width="640" height="480" accept="video/*" capture> -->
+
+<!-- <input type="file" accept="video/*;capture=camcorder"> -->
+
+<!-- <form action="server.cgi" method="post" enctype="multipart/form-data">
+  <input type="file" id="video" name="video" accept="video/*" capture>
+  <input type="submit" value="Upload">
+</form> -->
+
 <!-- <button class="w3-btn w3-blue" id="snap">Snap Code</button> -->
 
 
