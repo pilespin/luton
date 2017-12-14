@@ -17,13 +17,13 @@ if (ifset($_SESSION['login'])) {
 	<div class="w3-content w3-white w3-card" style="max-width:500px;">
 		<br>
 
-		<a class="w3-btn w3-blue w3-xlarge" href="index.php?r=add_promotion">Add Promotion</a>
+		<a class="w3-btn w3-blue w3-xlarge" style="min-width:250px;" href="index.php?r=add_promotion">Add Promotion</a>
 
 
 		<br>
 		<br>
 
-		<a class="w3-btn w3-blue w3-xlarge" href="index.php?r=convert_qr">Scan Promotion</a>
+		<a class="w3-btn w3-blue w3-xlarge" style="min-width:250px;"href="index.php?r=convert_qr">Scan Promotion</a>
 		<br>
 		<br>
 		<?php

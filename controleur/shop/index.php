@@ -14,6 +14,8 @@ else if ($tmp == "convert_qr")
 	include_once('controleur/shop/convertqr.php');
 else if ($tmp == "show_converted")
 	include_once('controleur/shop/show_converted.php');
+else if ($tmp == "get_discount")
+	include_once('controleur/shop/get_discount.php');
 else
 	include_once('home.php');
 

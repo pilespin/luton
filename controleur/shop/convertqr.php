@@ -80,12 +80,12 @@ setInterval(function(){
 	var b64 = canvas.toDataURL();
 
 	decodeImageFromBase64(b64,function(decodedInformation){
-		console.log(decodedInformation);
+		// console.log(decodedInformation);
 		if (decodedInformation != "error decoding QR Code")
 		{
 			window.location.href = "index.php?r=show_converted&name=" + decodedInformation;
 		}
-		console.log(decodedInformation);
+		// console.log(decodedInformation);
 
 	});
 
