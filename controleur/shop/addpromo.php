@@ -6,6 +6,7 @@ include_once "modele/shop/index.php";
 if (!isset($_SESSION['login'])) {
 	echo "<meta http-equiv='refresh' content='0; url=index.php' />";
 	return;
+}
 ///////////////////////////////////////////////////////
 
 ob_start();
@@ -73,6 +74,11 @@ ob_start();
 
 <br>
 <h4>Warning your promotion will be immediatly available for users</h4>
+
+<br>
+<br>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Eric_Dupond_promo_parfum_20_pour_cent" />
 
 <?php
 $controler['shop_controler'] = ob_get_clean();

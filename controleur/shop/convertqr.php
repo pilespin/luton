@@ -18,31 +18,12 @@ ob_start();
 
 <!-- <input type=“file” accept=“image/*;capture=camera”> -->
 <video class="w3-card" id="video" width="640" height="480" autoplay></video>
-<br><br>
-<button class="w3-btn w3-blue" id="snap">Snap Code</button>
 
-<br><br>
+<!-- <button class="w3-btn w3-blue" id="snap">Snap Code</button> -->
 
 
-<h1> En boutique</h1>
 
-
-Le commercant scanne le QR code et genere un code barre (EAN-13) compatible avec son instalation existante
-<br>
-
-les donnes que l'utilisateur a inscrit a la connexion au wifi son remonté au serveur
-
-<br>
-<br>
-<br>
-
-<img src="http://www.barcodes4.me/barcode/c39/Kinder20pourcent.png" />
-
-<br>
-<br>
-<br>
-
-Le commercant applique la reduction sur le produit
+<br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br>
 
 <canvas id="canvas" width="640" height="480"></canvas>
@@ -87,23 +68,28 @@ var context = canvas.getContext('2d');
 var video = document.getElementById('video');
 
 
-
 function decodeImageFromBase64(data, callback){
 	qrcode.callback = callback;
 	qrcode.decode(data)
 }
-// Trigger photo take
-document.getElementById("snap").addEventListener("click", function() {
+
+// Detecting qr
+setInterval(function(){  
 	context.drawImage(video, 0, 0, 640, 480);
 
 	var b64 = canvas.toDataURL();
-	// console.log(b64);
 
 	decodeImageFromBase64(b64,function(decodedInformation){
 		console.log(decodedInformation);
-		alert(decodedInformation);
+		if (decodedInformation != "error decoding QR Code")
+		{
+			window.location.href = "index.php?r=show_converted&name=" + decodedInformation;
+		}
+		console.log(decodedInformation);
+
 	});
-});
+
+}, 500);
 
 </script>
 
